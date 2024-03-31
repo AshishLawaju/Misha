@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MISHA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+      @layer components {
+        .container {
+          @apply mx-auto w-full px-3 sm:max-w-[600px] md:max-w-[740px] lg:max-w-[990px] xl:max-w-[1216px] 2xl:max-w-[1337px];
+        }
+        .btn {
+          @apply py-2 px-5 border-2 border-black/60;
+        }
+        .fontPoppins {
+          font-family: "Poppins", sans-serif;
+        }
+
+        .primaryText {
+          @apply text-[#C1ACA0];
+        }
+        .primaryBG {
+          @apply bg-[#C1ACA0];
+        }
+        .secondaryText {
+          @apply text-[#63564B];
+        }
+        .secondaryBG {
+          @apply bg-[#63564B];
+        }
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body class="">
+    <!-- Navbar -->
+
+    <nav
+      class="uppercase list-none flex item-center justify-between container py-3 text-sm fontPoppins font-medium fontPoppins"
+    >
+      <div class="flex gap-8 items-center">
+        <a href="/about.html" class="navlink">About</a>
+        <a href="/services.html" class="navlink">Services</a>
+        <a href="/testimonials" class="navlink">Testimonials</a>
+      </div>
+      <div class="flex flex-col text-center">
+        <h1 class="primaryText text-4xl font-serif flex gap-x-2 font-regular">
+          <span>M</span>
+          <span>I</span>
+          <span>H</span>
+          <span>S</span>
+          <span>A</span>
+        </h1>
+        <h2 class="text-[#C1ACA0] text-sm">ASTHETICS</h2>
+      </div>
+      <div class="flex gap-8 items-center">
+        <a href="/review.html" class="navlink">Reviews</a>
+        <a href="/contact.html" class="navlink">Contact</a>
+
+        <button
+          class="btn font-semibold hover:bg-black hover:text-white duration-300 transition-all"
+          type="button"
+        >
+          Book a Visit
+        </button>
+      </div>
+    </nav>
+
+    <!-- Navbar end -->
+
+    <!-- Hero section -->
+
+    <section
+      class="h-[90vh] bg-cover object-center relative"
+      style="background-image: url('images/hero.jpg')"
+    >
+      <div
+        class="max-h-[500px] max-w-[450px] bg-white absolute -bottom-40 right-12 flex flex-col gap-6 p-12 items-center justify-center text-center"
+      >
+        <span class="text-6xl font-bold text-black/80">
+          Plan Your Visit Now
+        </span>
+
+        <span class="text-sm primaryText">Begin the Change</span>
+        <button
+          type="button"
+          class="btn hover:scale-105 transition-all duration-300 secondaryBG text-white border-none max-w-[180px]"
+        >
+          Book a visit!
+        </button>
+      </div>
+    </section>
+
+    <!-- Hero section end here -->
+
+    <!-- Section 2 -->
+
+    <section class="container flex pt-40 pb-12">
+      <!-- <div>
+        <img src="/images/dots.png" alt="" />
+      </div> -->
+
+      <div
+        class="w-[40%] h-[100vh] relative"
+        style="background-image: url('images/section2.jpg')"
+      >
+        <img
+          data-aos="fade-up"
+          src="/images/section2girl.jpg"
+          class="absolute -bottom-40 -right-20"
+          alt=""
+        />
+      </div>
+      <div class="w-[60%] flex-col flex items-end justify-center">
+        <div class="max-w-[500px] flex flex-col gap-6">
+          <p class="text-6xl">
+            A Warm <br />
+            <span class="font-bold">Welcome</span> and a Timeless Beauty
+          </p>
+          <p class="font-light text-xl">
+            Our clients are our priority, we offer quality aesthetic services
+            with a team of specialists. More details about our services below.
+          </p>
+          <p class="text-sm">
+            We offer a range of procedures aimed at reducing signs of aging,
+            enhancing facial aesthetics, and providing non-surgical cosmetic
+            enhancements.
+          </p>
+          <p class="text-sm">
+            Our services include skincare treatments, such as laser therapy and
+            chemical peels, as well as injectable treatments like dermal fillers
+            and Botox. With a team of skilled professionals. Mihsa Aesthetics
+            amis to provide safe and effective treatments tailored to individual
+            needs and desired outcomes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--end of  Section 2 -->
+
+    <!-- section 3 -->
+
+    <section class="container pt-40 flex h-[120vh]">
+      <div
+        class="w-[40%] text-5xl flex flex-col gap-4 items-start justify-center"
+      >
+        Our Cases & <br />
+        <span class="font-bold">Success stories</span>
+
+        <hr class="secondaryBG border-2 border-[#C1ACA0] w-[77px]" />
+
+        <button
+          type="button"
+          class="btn hover:bg-black hover:text-white transition-all duration-300 text-base max-w-[180px]"
+        >
+          More Testimonials
+        </button>
+      </div>
+      <div class="w-[60%] flex gap-3 justify-between">
+        <div data-aos="fade-right" class="pt-8 pl-12">
+          <img src="/images/section3girl1.jpg" alt="" />
+        </div>
+        <div data-aos="flip-up" class="pt-16">
+          <img src="/images/section3girl2.jpg" alt="" />
+        </div>
+        <div data-aos="fade-left">
+          <img src="/images/section3girl23.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!--end of  section 3 -->
+
+    <!-- section 4 -->
+
+    <section class="container pt-40 max-h-[120vh] flex relative">
+      <div
+        data-aos="fade-left"
+        class="absolute right-[30%] top-[33%] shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.14)] h-[200px] w-[200px]"
+      ></div>
+
+      <div class="w-[50%] object-center overflow-hidden">
+        <img src="/images/section4.jpg" class="w-full" alt="" />
+      </div>
+      <div class="w-[50%] flex flex-col gap-3 items-end">
+        <div class="max-w-[500px] flex flex-col gap-8 px-3">
+          <p class="text-6xl font-bold capitalize">
+            About our <br />
+            Mihsa <br />Aesthetics
+          </p>
+          <p class="font- text-2xl leading-7">
+            At Mihsa Aesthetics every individuals can seek professional
+            aesthetic treatments to enhance their appearance.
+          </p>
+          <p class="text-sm">
+            Mihsa Aesthetics pride itself on using cutting-edge techniques and
+            technology to provide safe and effective procedures while
+            prioritizing client satisfaction and well-being.
+          </p>
+          <p class="text-sm">
+            We are team of qualified professionals such as dermatologists.
+            Plastic surgeons and aestheticians who tailor treatments to meet the
+            specific needs and goals of each client.
+          </p>
+
+          <div
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            class="mt-8 shadow-[8.0px_12.0px_8.0px_rgba(0,0,0,0.10)] h-[65px] w-[65px]"
+          ></div>
+        </div>
+      </div>
+    </section>
+    <!-- end of section 4 -->
+
+    <!-- section 5 -->
+
+    <section class="container pt-40 flex justify-between items-center">
+      <div
+        class="w-[40%] text-5xl flex flex-col gap-4 items-start justify-center"
+      >
+        Discover <br />
+        <span class="font-bold">Mihsa Aesthetics</span>
+
+        <hr class="secondaryBG border-2 border-[#C1ACA0] w-[77px]" />
+
+        <p class="text-lg">
+          Mihsa Aesthetics is speacialized clinic focusing on anti-aging
+          treatments, medical aesthetics, and cosmetic injectables.
+        </p>
+
+        <button
+          type="button "
+          class="btn text-base max-w-[220px] hover:bg-black hover:text-white transition-all duration-300"
+        >
+          Book an Appointment
+        </button>
+      </div>
+
+      <div>
+        <img src="/images/section5.jpg" alt="" />
+      </div>
+    </section>
+    <!-- end of section 5 -->
+
+    <!-- section 6 -->
+
+    <section
+      class="mt-40 w-full overflow-hidden h-[100vh] bg-cover object-center"
+      style="background-image: url(images/section6.jpg)"
+    ></section>
+
+    <!--end of  section 6 -->
+
+    <!-- section 7 -->
+    <section class="container pt-40 flex h-[120vh]">
+      <div
+        class="w-[40%] text-5xl flex flex-col gap-4 items-start justify-center"
+      >
+        Our <br />
+        <span class="font-bold">Team Member</span>
+
+        <button
+          type="button"
+          class="btn hover:bg-black hover:text-white transition-all duration-300 text-base max-w-[280px] uppercase"
+        >
+          view all members
+        </button>
+      </div>
+      <div class="w-[60%] flex gap-3 justify-between">
+        <div data-aos="fade-right" class="pt-8 pl-12">
+          <img src="/images/section7girl1.jpg" alt="" />
+        </div>
+        <div data-aos="flip-up" class="pt-16">
+          <img src="/images/section7girl2.jpg" alt="" />
+        </div>
+        <div data-aos="fade-left">
+          <img src="/images/section7girl3.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- end of section 7 -->
+
+    <!-- section 8 -->
+    <section class="container flex items-center justify-between pt-40 relative">
+      <div class="w-[80%]">
+        <img src="/images/section8.jpg" class="object-cover" alt="" />
+      </div>
+      <div class="w-[20%] flex flex-col gap-3 relative">
+        <div
+          class="w-[70px] h-[70px] shadow-[-4.0px_8.0px_8.0px_rgba(0,0,0,0.14)] absolute right-0 -top-20"
+        ></div>
+        <img src="/icons/heart.jpeg" class="h-[70px] w-[70px]" alt="" />
+        <span class="text-6xl">Follow</span>
+        <span class="text-6xl font-bold">#Mihsa</span>
+        <img src="icons/Insta.png" class="h-[50px] w-[50px]" alt="" />
+      </div>
+    </section>
+    <!-- end of section 8 -->
+
+    <!-- footer section -->
+
+    <footer
+      class="container mt-40 flex justify-between max-2xl:gap-20 text-xs pb-28 relative"
+    >
+      <div class="max-w-[400px]">
+        <h3 class="text-3xl whitespace-nowrap">
+          Newsletter <span class="font-bold">Signup</span>
+        </h3>
+        <div class="flex mt-3">
+          <input type="email" class="p-1 outline-none" placeholder="Email ID" />
+          <button class="btn relative btn-4 border-none text-white">
+            Subscribe NOW!
+          </button>
+        </div>
+
+        <p class="mt-3">
+          Join our email list for new treatment updates, promotions. <br />
+          special events + more!
+        </p>
+      </div>
+      <div class="">
+        <h3 class="text-3xl whitespace-nowrap">
+          Quick <span class="font-bold">Links</span>
+        </h3>
+        <ul class="mt-3">
+          <li>- About</li>
+          <li>- Services</li>
+          <li>- Testimonials</li>
+          <li>- Reviews</li>
+          <li>- Contact</li>
+          <li>- Book an Appointment</li>
+        </ul>
+      </div>
+      <div class="max-w-[400px] flex flex-col gap-3">
+        <h3 class="text-3xl whitespace-nowrap">
+          Our <span class="font-bold">Contacts</span>
+        </h3>
+        <div class="flex gap-1 items-center whitespace-nowrap">
+          <img src="/icons/pin.png" class="h-[18px] w-[18px]" alt="" />
+          Street Name, Address, City, State - ZIP
+        </div>
+        <button
+          type="button"
+          class="btn relative btn-4 border-none text-white rounded-3xl px-3 py-1 w-[170px]"
+        >
+          Get directions on the map
+        </button>
+
+        <div>
+          +1 (917) 488-6669
+          <span class="text-slate-500"> <br />(24/7 General Enquiry)</span>
+        </div>
+
+        <div class="flex gap-1 items-center">
+          <img src="/icons/envelope.jpeg" class="h-[16px] w-[20px]" alt="" />
+          info@mihsaaesthetics.com
+        </div>
+      </div>
+      <div class="min-w-[300px] flex flex-col gap-3">
+        <h3 class="text-3xl whitespace-nowrap">
+          Opening <span class="font-bold">Hours</span>
+        </h3>
+        <div class="flex items-center gap-12">
+          <div class="items-center gap-12">
+            <p>Sunday - Thrusday</p>
+            <p>Friday</p>
+            <p>Saturday</p>
+          </div>
+          <div class="">
+            <p>08:00 - 19:00</p>
+            <p>13:00 - 20:00</p>
+            <p>08:00 - 21:00</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-[70px] h-[70px] shadow-[-4.0px_8.0px_8.0px_rgba(0,0,0,0.20)] absolute -left-6 bottom-12"
+      ></div>
+    </footer>
+    <!-- end footer section -->
+    <!-- script section -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
