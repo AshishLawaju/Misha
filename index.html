@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MISHA</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <style type="text/tailwindcss">
       @layer utilities {
         .content-auto {
@@ -46,6 +48,9 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body class="">
+    <script>
+      AOS.init({ once: true });
+    </script>
     <!-- Navbar -->
 
     <nav
@@ -304,7 +309,7 @@
         <div
           class="w-[70px] h-[70px] shadow-[-4.0px_8.0px_8.0px_rgba(0,0,0,0.14)] absolute right-0 -top-20"
         ></div>
-        <img src="/icons/heart.jpeg" class="h-[70px] w-[70px]" alt="" />
+        <img src="/icons/heart.jpg" class="h-[70px] w-[70px]" alt="" />
         <span class="text-6xl">Follow</span>
         <span class="text-6xl font-bold">#Mihsa</span>
         <img src="icons/Insta.png" class="h-[50px] w-[50px]" alt="" />
@@ -367,7 +372,7 @@
         </div>
 
         <div class="flex gap-1 items-center">
-          <img src="/icons/envelope.jpeg" class="h-[16px] w-[20px]" alt="" />
+          <img src="/icons/envelope.jpg" class="h-[16px] w-[20px]" alt="" />
           info@mihsaaesthetics.com
         </div>
       </div>
@@ -395,9 +400,5 @@
     </footer>
     <!-- end footer section -->
     <!-- script section -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>
